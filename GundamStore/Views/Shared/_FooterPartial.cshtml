@@ -1,4 +1,6 @@
-﻿<footer class="footer-section footer-bg">
+﻿@model string
+
+<footer class="footer-section footer-bg @(Model == "Home" ? "" : "section-top-gap-100")">
     <div class="footer-wrapper">
         <!-- Start Footer Top -->
         <div class="footer-top">

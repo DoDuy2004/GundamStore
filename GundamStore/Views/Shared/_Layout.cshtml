@@ -33,13 +33,14 @@
     @await Html.PartialAsync("_WishlistPopupPartial")
     <!-- End Offcanvas Wishlist Section -->
     <!-- Start Offcanvas Search Bar Section -->
-    @await Html.PartialAsync("_CartPopupPartial")
+    @await Html.PartialAsync("_SearchPopupPartial")
     <!-- End Offcanvas Search Bar Section -->
     <!-- Offcanvas Overlay -->
     <div class="offcanvas-overlay"></div>
+
     @RenderBody()
     <!-- Start Footer Section -->
-    @await Html.PartialAsync("_FooterPartial")
+    @await Html.PartialAsync("_FooterPartial", ViewData["page"])
     <!-- End Footer Section -->
     <!-- material-scrolltop button -->
     <button class="material-scrolltop" type="button"></button>
@@ -49,7 +50,6 @@
     <!-- End Modal Add cart -->
     <!-- Start Modal Quickview cart -->
     @await Html.PartialAsync("_ModalQuickviewPartial")
-
     <!-- End Modal Quickview cart -->
     <script src="~/js/vendor/vendor.min.js"></script>
     <script src="~/js/plugins/plugins.min.js"></script>

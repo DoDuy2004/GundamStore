@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using OmegaStore.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<StoreDbContext>(opts
+    => opts.UseSqlServer(builder.Configuration.GetConnectionString("")));
 
 var app = builder.Build();
 
@@ -23,5 +28,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+SeedData.Initialize(app.Services);
 
 app.Run();

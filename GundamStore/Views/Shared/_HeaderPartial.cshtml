@@ -7,7 +7,7 @@
                         <!-- Start Header Logo -->
                         <div class="header-logo">
                             <div class="logo">
-                                <a href="index.html"><img src="~/images/logo/logo_black.png" alt=""></a>
+                                <a href="@Url.Action("Index", "Home")"><img src="~/images/logo/logo_black.png" alt=""></a>
                             </div>
                         </div>
                         <!-- End Header Logo -->
@@ -15,28 +15,50 @@
                         <div class="main-menu menu-color--black menu-hover-color--golden">
                             <nav>
                                 <ul>
+                                    <li>
+                                        <a href="@Url.Action("Index", "Home")">
+                                            Home
+                                        </a>
+                                    </li>
                                     <li class="has-dropdown">
-                                        <a class="active main-menu-link" href="index.html">
-                                            Home <i class="fa fa-angle-down"></i>
+                                        <a href="@Url.Action("Index", "Product")">
+                                            Mô hình <i class="fa fa-angle-down"></i>
                                         </a>
                                         <!-- Sub Menu -->
                                         <ul class="sub-menu">
-                                            <li><a href="index.html">Home 1</a></li>
-                                            <li><a href="index-2.html">Home 2</a></li>
-                                            <li><a href="index-3.html">Home 3</a></li>
-                                            <li><a href="index-4.html">Home 4</a></li>
+                                            <li>
+                                                <a href="#">Tất cả mô hình</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Mô hình kim loại 3D</a>
+                                            </li>
+                                            <li><a href="#">Mô hình gỗ 3D</a></li>
+                                            <li>
+                                                <a href="#">Mô hình nhựa 3D</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Mô hình Gundam</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Mô hình giấy 3D</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Mô hình ốc vít 3D
+                                                </a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown has-megaitem">
-                                        <a href="product-details-default.html">
-                                            Shop <i class="fa fa-angle-down"></i>
+                                        <a href="@Url.Action("Index", "Product")">
+                                            Danh mục <i class="fa fa-angle-down"></i>
                                         </a>
                                         <!-- Mega Menu -->
                                         <div class="mega-menu">
                                             <ul class="mega-menu-inner">
                                                 <!-- Mega Menu Sub Link -->
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Shop Layouts</a>
+                                                    <a href="#" class="mega-menu-item-title">Thể loại 1</a>
                                                     <ul class="mega-menu-sub">
                                                         <li>
                                                             <a href="shop-grid-sidebar-left.html">
@@ -67,7 +89,7 @@
                                                 </li>
                                                 <!-- Mega Menu Sub Link -->
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Other Pages</a>
+                                                    <a href="#" class="mega-menu-item-title">Thể loại 2</a>
                                                     <ul class="mega-menu-sub">
                                                         <li><a href="cart.html">Cart</a></li>
                                                         <li><a href="empty-cart.html">Empty Cart</a></li>
@@ -80,7 +102,7 @@
                                                 </li>
                                                 <!-- Mega Menu Sub Link -->
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
+                                                    <a href="#" class="mega-menu-item-title">Thể loại 3</a>
                                                     <ul class="mega-menu-sub">
                                                         <li>
                                                             <a href="product-details-default.html">
@@ -101,7 +123,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="product-details-group.html">Product Group</a>
+                                                            <a href="product-details-group.html">Thể loại 4</a>
                                                         </li>
                                                         <li>
                                                             <a href="product-details-single-slide.html">
@@ -113,7 +135,7 @@
                                                 </li>
                                                 <!-- Mega Menu Sub Link -->
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
+                                                    <a href="#" class="mega-menu-item-title">Thể loại 4</a>
                                                     <ul class="mega-menu-sub">
                                                         <li>
                                                             <a href="product-details-tab-left.html">
@@ -162,50 +184,15 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="has-dropdown">
-                                        <a href="blog-single-sidebar-left.html">
-                                            Blog <i class="fa fa-angle-down"></i>
-                                        </a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="blog-grid-sidebar-left.html">Blog Grid Sidebar left</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-grid-sidebar-right.html">Blog Grid Sidebar Right</a>
-                                            </li>
-                                            <li><a href="blog-full-width.html">Blog Full Width</a></li>
-                                            <li>
-                                                <a href="blog-list-sidebar-left.html">Blog List Sidebar Left</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-list-sidebar-right.html">Blog List Sidebar Right</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-single-sidebar-left.html">Blog Single Sidebar left</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-single-sidebar-right.html">
-                                                    Blog Single Sidebar
-                                                    Right
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-dropdown">
-                                        <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
-                                            <li><a href="faq.html">Frequently Questions</a></li>
-                                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                        </ul>
+
+                                    <li>
+                                        <a href="@Url.Action("Index", "Post")">Tin tức</a>
                                     </li>
                                     <li>
-                                        <a href="about-us.html">About Us</a>
+                                        <a href="@Url.Action("About", "Home")">Giới thiệu</a>
                                     </li>
                                     <li>
-                                        <a href="contact-us.html">Contact Us</a>
+                                        <a href="@Url.Action("Contact", "Home")">Liên hệ</a>
                                     </li>
                                 </ul>
                             </nav>
