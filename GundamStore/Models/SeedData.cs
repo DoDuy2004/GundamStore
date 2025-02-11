@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace OmegaStore.Models
+namespace GundamStore.Models
 {
 	public class SeedData
 	{

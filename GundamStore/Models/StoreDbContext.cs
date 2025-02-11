@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace OmegaStore.Models;
+namespace GundamStore.Models;
 
 public partial class StoreDbContext : DbContext
 {
